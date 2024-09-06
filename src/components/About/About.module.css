@@ -75,6 +75,27 @@
   max-width: 100%;
 }
 
+.fairy {
+  position: relative;
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.fairyAnimation {
+  animation: fly 6s ease-in-out infinite;
+}
+
+@keyframes fly {
+  0%, 100% {
+    transform: translate(-50%, -50%) translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translate(-20%, -50%) translateY(-40px) rotate(10deg);
+  }
+}
+
 @media screen and (max-width: 900px) {
   .about {
     padding: 40px 0;
@@ -90,5 +111,6 @@
   }
   .fairy {
     width: 80%;
+    left: 25%;
   }
 }

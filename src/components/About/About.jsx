@@ -50,7 +50,7 @@ function About() {
         </Row>
         <Row className="position-relative mt-4">
           <Col md={12} className="text-center">
-            <Image src={FairyImg} className={styles.fairy} />
+            <Image src={FairyImg} className={`${styles.fairy} ${styles.fairyAnimation}`} />
             <Image src={MapImg} className={styles.map} />
           </Col>
         </Row>
