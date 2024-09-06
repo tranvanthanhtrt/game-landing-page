@@ -12,7 +12,7 @@ function Banner() {
   return (
     <div className={styles.banner}>
       <Container className={styles.content}>
-      <Image src={Fairy} className={styles.fairy} />
+        <Image src={Fairy} className={styles.fairy} />
         <Row className="justify-content-center text-center align-items-center h-100">
           <Col md={8} className={styles.box}>
             <h1 className={styles.title}>{t('title')}</h1>

@@ -17,7 +17,7 @@ function Games() {
     <section className={styles.gamesSection} id="games">
       <Container>
         <h2 className={`${styles.sectionTitle} section-title text-center`}>{t('title')}</h2>
-        <p className={styles.description}>{t('game_description')}</p>
+        <p className="text-center">{t('game_description')}</p>
         <Row className={styles.gamesGrid}>
           {games.map((game) => (
             <Col key={game.id} xs={6} sm={6} lg={3} className={`${styles.gameCol} p-1 p-sm-2 p-md-3`}>

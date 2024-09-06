@@ -6,6 +6,8 @@
   padding: 100px 0;
   position: relative;
   overflow: hidden;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .content {
@@ -30,7 +32,20 @@
   position: absolute;
   bottom: -2rem;
   left: 0;
-  /* width: 940px; */
   height: 100%;
   object-fit: cover;
+}
+
+@media screen and (max-width: 1200px) {
+  .fairy {
+    height: 50%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .title {
+    font-size: 3rem;
+  }
+  .content {
+    height: 480px;
+  }
 }

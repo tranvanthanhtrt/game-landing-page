@@ -1,5 +1,6 @@
 {
-  "description": "We will back to something amazing. Getting the latest updates about our games. Please sign up to our newsletter.",
-  "emailPlaceholder": "Enter your email",
-  "submit": "Submit"
+  "title": "Trò chơi sắp ra mắt",
+  "description": "Chúng tôi sẽ trở lại với một điều tuyệt vời. Để nhận các bản cập nhật mới nhất về trò chơi, vui lòng đăng ký nhận bản tin của chúng tôi.",
+  "emailPlaceholder": "Địa chỉ email của bạn",
+  "submit": "Gửi"
 }

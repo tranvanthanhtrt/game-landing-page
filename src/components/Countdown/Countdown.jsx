@@ -21,7 +21,7 @@ function Countdown() {
   });
 
   return (
-    <div className={`${styles.countdown} bg-white p-4 rounded-5 mx-auto`}>
+    <div className={`${styles.countdown} bg-white p-3 p-md-4 rounded-5 mx-auto`}>
       {Object.entries(timeLeft).map(([unit, value]) => (
         <>
           <div key={unit} className={styles.timeUnit}>

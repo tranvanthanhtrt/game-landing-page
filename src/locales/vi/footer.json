@@ -1,9 +1,7 @@
 {
-  "copyright": "© 2023 Game Studio. All rights reserved.",
-  "privacyPolicy": "Chính sách bảo mật",
-  "termsOfService": "Điều khoản dịch vụ",
+  "copyright": "2017 Copyright. Policy.",
   "address": "Địa chỉ",
-  "subscribe": "Đăng ký",
-  "subscribeText": "Đăng ký để nhận thông tin mới nhất.",
+  "subscribe": "Theo dõi",
+  "subscribeText": "Đăng ký nhận bản tin của chúng tôi và là người đầu tiên biết về các cập nhật của chúng tôi.",
   "enterEmail": "Nhập email"
 }

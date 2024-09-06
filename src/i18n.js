@@ -12,7 +12,7 @@ i18n
       escapeValue: false,
     },
     backend: {
-      loadPath: './locales/{{lng}}/{{ns}}.json',
+      loadPath: 'src/locales/{{lng}}/{{ns}}.json',
     },
     ns: ['common', 'header', 'banner', 'countdown', 'about', 'games', 'partners', 'footer'],
     defaultNS: 'common',

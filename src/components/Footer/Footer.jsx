@@ -13,7 +13,7 @@ function Footer() {
   const { t } = useTranslation('footer');
 
   return (
-    <footer className={styles.footer}>
+    <footer className={styles.footer} id="contact-us">
       <Container>
         <Row>
           <Col md={4} className={styles.logoSection}>

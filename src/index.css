@@ -52,3 +52,11 @@ a:hover {
   position: absolute !important;
   top: 1rem !important;
 }
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 12px;
+  }
+  .section-title {
+    font-size: 3rem;
+  }
+}

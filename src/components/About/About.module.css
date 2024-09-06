@@ -74,3 +74,21 @@
 .fairy, .map  {
   max-width: 100%;
 }
+
+@media screen and (max-width: 900px) {
+  .about {
+    padding: 40px 0;
+  }
+  .statNumber {
+    font-size: 3rem;
+  }
+  .statLabel {
+    font-size: 2rem;
+  }
+  .features {
+    padding: 40px 20px 20px 20px;
+  }
+  .fairy {
+    width: 80%;
+  }
+}

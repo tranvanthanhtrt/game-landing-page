@@ -18,12 +18,12 @@ function InfoForm() {
     <div className={`${styles.infoForm} mt-4`}>
       <Row className="justify-content-center">
         <Col md={8}>
-            <p className={styles.description}>We will back to something amazing. Getting the latest updates about our games. Please sign up to our newsletter.</p>
+            <p className={styles.description}>{t('description')}</p>
             <Form onSubmit={handleSubmit} className={`${styles.form}`}>
             <Form.Group controlId="email" className={styles.inputGroup}>
               <Form.Control
                 type="email"
-                placeholder={t('Enter your email')}
+                placeholder={t('emailPlaceholder')}
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required

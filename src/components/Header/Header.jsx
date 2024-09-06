@@ -3,13 +3,14 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import { useTranslation } from 'react-i18next';
 import logo from '@assets/images/header/logo.png';
 import LanguageBox from './LanguageBox';
+import styles from './Header.module.css';
 function Header() {
   const { t } = useTranslation('header');
 
   return (
     <Navbar expand="lg" className='position-absolute top-0 w-100' style={{zIndex: 1}}>
       <Container className='d-flex justify-content-between align-items-center'>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="#home" className={styles.brand}>
           <img
             src={logo}
             height="64"
