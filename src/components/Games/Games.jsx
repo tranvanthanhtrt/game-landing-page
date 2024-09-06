@@ -3,6 +3,7 @@ import { Container, Row, Col, Card } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 import styles from './Games.module.css';
 import { getGames } from '@data/games';
+
 function Games() {
   const { t } = useTranslation('games');
   const [games, setGames] = useState([]);

@@ -1,5 +1,5 @@
 import { Container } from 'react-bootstrap';
-import { Header, Games, Banner, About} from '@/components';
+import { Header, Games, Banner, About, Partners} from '@/components';
 import './App.css';
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
       <Banner />
       <About />
       <Games />
-      {/* <Partners /> */}
+      <Partners />
       {/* <Footer /> */}
     </Container>
   );

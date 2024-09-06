@@ -1,8 +1,9 @@
-export { default as Header } from './Header/Header';
-export { default as Banner } from './Banner/Banner';
-export { default as Countdown } from './Countdown/Countdown';
-export { default as InfoForm } from './InfoForm/InfoForm';
-export { default as About } from './About/About';
-export { default as Games } from './Games/Games';
-// export { default as Partners } from './Partners/Partners';
-// export { default as Footer } from './Footer/Footer';
+import Header from './Header/Header';
+import Banner from './Banner/Banner';
+import Countdown from './Countdown/Countdown';
+import InfoForm from './InfoForm/InfoForm';
+import About from './About/About';
+import Games from './Games/Games';
+import Partners from './Partners/Partners';
+// import Footer } from './Footer/Footer';
+export { Header, Banner, Countdown, InfoForm, About, Games, Partners };
