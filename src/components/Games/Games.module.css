@@ -1,18 +1,55 @@
 .gamesSection {
-  padding: 4rem 0;
-  /* background-color: #f8f9fa; */
-  margin-top: 2rem;
+  padding: 60px 0;
+  background-color: #f8f9fa;
 }
 
 .sectionTitle {
-  margin-bottom: 2rem;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.gamesGrid {
+  margin-top: 30px;
 }
 
 .gameCard {
-  margin-bottom: 1rem;
-  transition: transform 0.3s ease-in-out;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 4px 4px 8px rgb(0 0 0 / 37%);
+  transition: transform 0.3s ease;
+  height: 100%;
 }
 
+.gameCol:nth-child(even) {
+  position: relative;
+  top: 80px;
+}
 .gameCard:hover {
   transform: translateY(-5px);
+  cursor: pointer;
+}
+
+.imageWrapper {
+  height: 410px;
+  overflow: hidden;
+}
+.gameOverlay {
+  top: unset !important;
+}
+.gameImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gameTitle{
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.gameDescription {
+  font-size: 0.9rem;
+  color: #fff;
 }
