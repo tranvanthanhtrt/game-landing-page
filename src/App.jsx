@@ -1,5 +1,5 @@
 import { Container } from 'react-bootstrap';
-import { Header, Games, Banner, About, Partners, Footer} from '@/components';
+import { Header, Games, Banner, About, Partners, Footer, ScrollToTopButton} from '@/components';
 import './App.css';
 
 function App() {
@@ -11,6 +11,7 @@ function App() {
       <Games />
       <Partners />
       <Footer />
+      <ScrollToTopButton />
     </Container>
   );
 }
