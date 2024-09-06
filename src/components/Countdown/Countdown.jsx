@@ -4,11 +4,18 @@ import styles from './Countdown.module.css';
 
 function Countdown() {
   const { t } = useTranslation('countdown');
-  const [timeLeft, setTimeLeft] = useState({});
-
+  const [timeLeft, setTimeLeft] = useState({
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0
+  });
+  const endDate = new Date("2024-12-31");
   useEffect(() => {
+    let difference = +endDate - +new Date();
+    if (!(difference > 0)) {return}
     const timer = setTimeout(() => {
-      const difference = +new Date("2024-12-31") - +new Date();
+      difference = +endDate - +new Date();
       setTimeLeft({
         days: Math.floor(difference / (1000 * 60 * 60 * 24)),
         hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
@@ -25,7 +32,7 @@ function Countdown() {
       {Object.entries(timeLeft).map(([unit, value]) => (
         <>
           <div key={unit} className={styles.timeUnit}>
-            <span className={styles.number}>{value}</span>
+            <span className={styles.number}>{value || '00'}</span>
             <span className={styles.label}>{t(unit)}</span>
           </div>
           {unit !== 'seconds' && <span className={styles.separator}>:</span>}

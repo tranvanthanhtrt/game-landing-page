@@ -48,10 +48,17 @@ a:hover {
   padding: 1rem 0;
 }
 
-#offcanvasNavbar-expand-lg.show .navbar-nav .dropdown {
+#offcanvasNavbar-expand-lg.show .nav-item.dropdown {
   position: absolute !important;
   top: 1rem !important;
 }
+.nav-item.show.dropdown .dropdown-menu {
+  left: -200%;
+} 
+#offcanvasNavbar-expand-lg.show .nav-item.show.dropdown .dropdown-menu {
+  left: 0;
+} 
+
 @media screen and (max-width: 900px) {
   html {
     font-size: 12px;

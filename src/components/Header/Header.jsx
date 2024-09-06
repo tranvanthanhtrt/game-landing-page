@@ -27,15 +27,13 @@ function Header() {
           <Offcanvas.Header closeButton>
           </Offcanvas.Header>
             <Offcanvas.Body className='justify-content-end'>
-              <Nav>
+              <Nav className='me-4'>
                 <Nav.Link href="#about" className='text-light text-uppercase px-4 fw-bold'>{t('about')}</Nav.Link>
                 <Nav.Link href="#games" className='text-light text-uppercase px-4 fw-bold'>{t('games')}</Nav.Link>
                 <Nav.Link href="#partners" className='text-light text-uppercase px-4 fw-bold'>{t('partners')}</Nav.Link>
                 <Nav.Link href="#contact-us" className='text-light text-uppercase px-4 fw-bold'>{t('contact_us')}</Nav.Link>
               </Nav>
-              <Nav>
-                <LanguageBox />
-              </Nav>
+              <LanguageBox />
             </Offcanvas.Body>
           </Navbar.Offcanvas>
       </Container>

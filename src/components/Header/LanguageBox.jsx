@@ -1,5 +1,6 @@
-import { Dropdown } from 'react-bootstrap';
+// import { Dropdown } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
+import NavDropdown from 'react-bootstrap/NavDropdown';;
 import styles from './LanguageBox.module.css';
 
 // Import flag images
@@ -21,27 +22,25 @@ function LanguageBox() {
   const currentLang = languages.find(lang => lang.code === i18n.language) || languages[1];
 
   return (
-    <Dropdown className={styles.languageBox}>
-      <Dropdown.Toggle variant="light" id="dropdown-language" className={styles.dropdownToggle}>
+    <NavDropdown 
+      title={
         <img src={currentLang.flag} alt={currentLang.name} className={styles.flag} />
-        {/* <span className={styles.languageName}>{currentLang.name}</span> */}
-      </Dropdown.Toggle>
-
-      <Dropdown.Menu className={styles.dropdownMenu}>
-        {languages.map((lang) => (
-          <Dropdown.Item 
-            key={lang.code} 
-            onClick={() => changeLanguage(lang.code)}
-            className={styles.dropdownItem}
-            active={lang.code === i18n.language}
-          >
-            <img src={lang.flag} alt={lang.name} className={styles.flag} />
-            <span>{lang.name}</span>
-            {lang.code === i18n.language && <span className={styles.checkmark}>✓</span>}
-          </Dropdown.Item>
-        ))}
-      </Dropdown.Menu>
-    </Dropdown>
+      }
+      className={styles.languagesMenu}
+      id="navbarScrollingDropdown"
+    >
+      {languages.map((lang) => (
+        <NavDropdown.Item 
+          key={lang.code} 
+          onClick={() => changeLanguage(lang.code)}
+          className="d-flex align-items-center"
+        >
+          <div className={styles.checkmark}> {lang.code === i18n.language ? '✓' : ''}</div>
+          <img src={lang.flag} alt={lang.name} className={styles.flag} />
+          <span className={styles.languageName}>{lang.name}</span>
+        </NavDropdown.Item>
+      ))}
+    </NavDropdown>
   );
 }
 
