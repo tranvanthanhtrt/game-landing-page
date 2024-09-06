@@ -1,0 +1,38 @@
+.infoForm {
+  text-align: center;
+}
+
+.description {
+  margin-bottom: 2rem;
+  font-size: 1.15rem;
+}
+.inputGroup {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.emailInput {
+  width: 100%;
+  padding: 12px 50px 12px 20px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  height: 56px;
+}
+
+.submitButton {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.submitButton img {
+  width: 24px;
+  height: 24px;
+}

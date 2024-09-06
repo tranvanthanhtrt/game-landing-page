@@ -1,0 +1,45 @@
+.banner {
+  background-image: url('../../assets/images/banner/bgr.png');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* .banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(76, 0, 255, 0.7), rgba(0, 255, 255, 0.7));
+} */
+.content {
+  height: 880px;
+}
+
+.box {
+  z-index: 1;
+  backdrop-filter: blur(4px);
+  background-color: rgb(255 255 255 / 0%);  
+  padding: 2rem;
+  border-radius: 50% 50% 20px 10px;
+}
+.title {
+  font-family: 'Playfair Display', serif;
+  font-size: 5rem;
+  margin-bottom: 2rem;
+  position: relative;
+  font-weight: 900;
+}
+.fairy {
+  position: absolute;
+  bottom: -2rem;
+  left: 0;
+  /* width: 940px; */
+  height: 100%;
+  object-fit: cover;
+}

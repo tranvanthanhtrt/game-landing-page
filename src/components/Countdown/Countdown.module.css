@@ -1,0 +1,31 @@
+.countdown {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4rem;
+  width: fit-content;
+}
+
+.timeUnit {
+  margin: 0 1rem;
+  color: #000;
+}
+
+.number {
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+  font-weight: 900;
+  display: block;
+}
+
+.label {
+  font-size: 0.9rem;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.separator {
+  margin: 0 2rem;
+  width: 10px;
+  font-size: 4rem;
+  color: #000;
+}

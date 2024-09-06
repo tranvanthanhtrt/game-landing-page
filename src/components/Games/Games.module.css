@@ -1,0 +1,18 @@
+.gamesSection {
+  padding: 4rem 0;
+  /* background-color: #f8f9fa; */
+  margin-top: 2rem;
+}
+
+.sectionTitle {
+  margin-bottom: 2rem;
+}
+
+.gameCard {
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gameCard:hover {
+  transform: translateY(-5px);
+}

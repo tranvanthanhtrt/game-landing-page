@@ -1,0 +1,73 @@
+.about {
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.statNumber {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #079BEE;
+  display: block;
+}
+.statNumber span {
+  font-size: 0.5em;
+}
+.statLabel {
+  font-size: 1.5rem;
+  color: #000;
+  font-weight: bold;
+}
+
+.features {
+  background-color: #eeeeee;
+  padding: 100px 60px;
+  border-radius: 10px;
+}
+
+.featureItem {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.featureIcon {
+  margin-right: 15px;
+  background-color: #e9ecef;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  background-color: #E3FCFF;
+}
+
+.featureTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #000;
+}
+
+.featureDescription {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
