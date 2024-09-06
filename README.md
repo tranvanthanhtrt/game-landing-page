@@ -24,3 +24,16 @@ npm run dev
 # or
 yarn dev
 ```
+### Page screenshot
+![Home page](./public/screen/1.png)
+![Home page](./public/screen/2.png)
+![Home page](./public/screen/3.png)
+![Home page](./public/screen/4.png)
+![Home page](./public/screen/5.png)
+![Home page](./public/screen/6.png)
+![Home page](./public/screen/7.png)
+![Home page](./public/screen/8.png)
+![Home page](./public/screen/9.png)
+![Home page](./public/screen/10.png)
+![Home page](./public/screen/11.png)
+![Home page](./public/screen/12.png)
