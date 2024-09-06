@@ -1,0 +1,85 @@
+.footer {
+  background-color: #1a237e;
+  color: white;
+  padding: 80px 0 0;
+  background-image: url('../../assets/images/footer/bg.png');
+}
+
+.logoSection {
+  margin-bottom: 30px;
+}
+
+.logo {
+  width: 160px;
+  height: auto;
+  margin-bottom: 40px;
+}
+
+.socialIcons a {
+  color: white;
+  margin-right: 15px;
+}
+
+.addressSection h5,
+.subscribeSection h5 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.addressSection p {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.addressSection p svg {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  margin-top: 3px;
+  fill: currentColor;
+}
+
+.subscribeSection p {
+  margin-bottom: 20px;
+}
+
+.subscribeSection input {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: solid 1px #fff;
+  color: #fff;
+  height: 56px;
+  border-radius: 10px !important;
+}
+.subscribeSection input:focus {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.subscribeSection input::placeholder {
+  color: #fff;
+}
+
+.subscribeSection button {
+  background-color: transparent;
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.copyright {
+  background-color: #000;
+  padding: 30px 0;
+  margin-top: 40px;
+}
+
+.copyright p {
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 1.25rem;
+}

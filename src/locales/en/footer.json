@@ -1,5 +1,9 @@
 {
   "copyright": "© 2023 Game Studio. All rights reserved.",
   "privacyPolicy": "Privacy Policy",
-  "termsOfService": "Terms of Service"
+  "termsOfService": "Terms of Service",
+  "address": "Address",
+  "subscribe": "Subscribe",
+  "subscribeText": "Subscribe to our newsletter to get the latest news and updates.",
+  "enterEmail": "Enter your email"
 }
