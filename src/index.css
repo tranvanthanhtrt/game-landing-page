@@ -34,3 +34,21 @@ a:hover {
   font-size: 4rem;
   font-weight: 900;
 }
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+#offcanvasNavbar-expand-lg.show .navbar-nav a {
+  color: #000 !important;
+  text-align: center;
+  border-bottom: 1px solid #EEEEEE;
+  padding: 1rem 0;
+}
+
+#offcanvasNavbar-expand-lg.show .navbar-nav .dropdown {
+  position: absolute !important;
+  top: 1rem !important;
+}

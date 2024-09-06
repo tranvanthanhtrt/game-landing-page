@@ -1,0 +1,49 @@
+.languageBox {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dropdownToggle {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: none;
+  padding: 8px 12px;
+}
+
+.dropdownToggle::after {
+  display: none;
+}
+
+.flag {
+  width: 24px;
+  height: 16px;
+  margin-right: 8px;
+  object-fit: cover;
+}
+
+.languageName {
+  font-size: 14px;
+  color: #333;
+}
+
+.dropdownMenu {
+  min-width: 100%;
+  padding: 0;
+}
+
+.dropdownItem {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+}
+
+.dropdownItem.active {
+  background-color: #f8f9fa;
+}
+
+.checkmark {
+  margin-left: auto;
+  color: #007bff;
+}

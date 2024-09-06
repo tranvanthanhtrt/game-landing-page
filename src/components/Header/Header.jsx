@@ -1,12 +1,10 @@
 import { Navbar, Nav, Container } from 'react-bootstrap';
+import Offcanvas from 'react-bootstrap/Offcanvas';
 import { useTranslation } from 'react-i18next';
 import logo from '@assets/images/header/logo.png';
+import LanguageBox from './LanguageBox';
 function Header() {
-  const { t, i18n } = useTranslation('header');
-
-  const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
-  };
+  const { t } = useTranslation('header');
 
   return (
     <Navbar expand="lg" className='position-absolute top-0 w-100' style={{zIndex: 1}}>
@@ -20,18 +18,25 @@ function Header() {
           />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
-          <Nav>
-            <Nav.Link href="#about" className='text-light text-uppercase px-4'>{t('about')}</Nav.Link>
-            <Nav.Link href="#games" className='text-light text-uppercase px-4'>{t('games')}</Nav.Link>
-            <Nav.Link href="#partners" className='text-light text-uppercase px-4'>{t('partners')}</Nav.Link>
-            <Nav.Link href="#contact-us" className='text-light text-uppercase px-4'>{t('contact_us')}</Nav.Link>
-          </Nav>
-          <Nav>
-            <Nav.Link onClick={() => changeLanguage('en')}>EN</Nav.Link>
-            <Nav.Link onClick={() => changeLanguage('vi')}>VI</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
+        <Navbar.Offcanvas
+          id={`offcanvasNavbar-expand-lg`}
+          aria-labelledby={`offcanvasNavbarLabel-expand-lg`}
+          placement="end"
+        >
+          <Offcanvas.Header closeButton>
+          </Offcanvas.Header>
+            <Offcanvas.Body className='justify-content-end'>
+              <Nav>
+                <Nav.Link href="#about" className='text-light text-uppercase px-4 fw-bold'>{t('about')}</Nav.Link>
+                <Nav.Link href="#games" className='text-light text-uppercase px-4 fw-bold'>{t('games')}</Nav.Link>
+                <Nav.Link href="#partners" className='text-light text-uppercase px-4 fw-bold'>{t('partners')}</Nav.Link>
+                <Nav.Link href="#contact-us" className='text-light text-uppercase px-4 fw-bold'>{t('contact_us')}</Nav.Link>
+              </Nav>
+              <Nav>
+                <LanguageBox />
+              </Nav>
+            </Offcanvas.Body>
+          </Navbar.Offcanvas>
       </Container>
     </Navbar>
   );

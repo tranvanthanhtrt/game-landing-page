@@ -3,6 +3,9 @@
   color: white;
   padding: 80px 0 0;
   background-image: url('../../assets/images/footer/bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .logoSection {
@@ -19,25 +22,14 @@
   color: white;
   margin-right: 15px;
 }
+.addressSection {
+  margin-bottom: 60px;
+}
 
 .addressSection h5,
 .subscribeSection h5 {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   font-size: 2rem;
-}
-
-.addressSection p {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 10px;
-}
-
-.addressSection p svg {
-  width: 18px;
-  height: 18px;
-  margin-right: 10px;
-  margin-top: 3px;
-  fill: currentColor;
 }
 
 .subscribeSection p {

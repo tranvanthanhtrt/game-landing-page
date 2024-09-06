@@ -4,9 +4,8 @@ import styles from './Footer.module.css';
 import TwitterIcon from '@assets/icons/twitter.svg';
 import FacebookIcon from '@assets/icons/facebook.svg';
 import LinkedinIcon from '@assets/icons/linkedin.svg';
-  // import MapMarkerIcon from '@assets/icons/location.svg';
-  // import PhoneIcon from '@assets/icons/mobile.svg';
-// import { ReactComponent as ArrowRightIcon } from '@assets/icons/arrow-right-white.svg';
+import LocationIcon from '@assets/icons/location.svg';
+import PhoneIcon from '@assets/icons/mobile.svg';
 import logo from '@assets/images/header/logo.png';
 import ArrowRightIcon from '@assets/icons/arrow-right-white.svg';
 
@@ -53,9 +52,29 @@ function Footer() {
           </Col>
           <Col md={4} className={styles.addressSection}>
             <h5>{t('address')}</h5>
-            {/* <p><MapMarkerIcon /> Valletta Buildings, South Street, Valletta - VLT 1103 Malta, US</p>
-            <p><MapMarkerIcon /> 20 Phan Dang Luu street, Hai Chau District, Danang city, Vietnam</p>
-            <p><PhoneIcon /> (+1) 555-0108-000 or (+256) 555-0108</p> */}
+            <div className='d-flex align-items-top gap-2'>
+              <img
+                src={LocationIcon}
+                height="32"
+                className="d-inline-block align-top"
+                alt="location"
+              />
+              <div>
+                <p>Valletta Buildings, South Street, Valletta - VLT 1103 Malta, US</p>
+                <p> 20 Phan Dang Luu street, Hai Chau District, Danang city, Vietnam</p>
+              </div>
+            </div>
+            <div className='d-flex align-items-center gap-2'>
+              <img
+                src={PhoneIcon}
+                height="32"
+                className="d-inline-block align-top"
+                alt="phone"
+                /> 
+              <p className='mb-0'>
+                (+1) 555-0108-000 or (+256) 555-0108
+              </p>
+            </div>
           </Col>
           <Col md={4} className={styles.subscribeSection}>
             <h5>{t('subscribe')}</h5>
